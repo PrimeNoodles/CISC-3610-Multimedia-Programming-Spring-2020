@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="1000" height="800" style="border:1px solid #d3d3d3;">
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+//Sky
+ctx.fillStyle = "#191970";
+ctx.fillRect(0, 0, 1000, 400);
+
+//Moon
+ctx.fillStyle = "#FFF5EE";
+ctx.beginPath();
+ctx.arc(75, 75, 50, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "#191970";
+ctx.beginPath();
+ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+ctx.fill();
+
+//Clouds
+ctx.fillStyle = "#A9A9A9";
+ctx.beginPath();
+ctx.arc(200, 150, 100, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "#A9A9A9";
+ctx.beginPath();
+ctx.arc(300, 170, 85, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "#A9A9A9";
+ctx.beginPath();
+ctx.arc(225, 200, 80, 0, 2 * Math.PI);
+ctx.fill();
+
+//Ground
+ctx.fillStyle = "#006400";
+ctx.fillRect(0, 400, 1000, 400);
+
+//Grass
+for(i = 0; i < 5; i++){
+ctx.fillStyle = "#556B2F";
+ctx.beginPath();
+ctx.moveTo((15 + (i * 100)), 455);
+ctx.lineTo((33 + (i * 100)), 375);
+ctx.lineTo((55 + (i * 100)), 465);
+ctx.fill();
+
+ctx.fillStyle = "#556B2F";
+ctx.beginPath();
+ctx.moveTo((5 + (i * 100)), 465);
+ctx.lineTo((15 + (i * 100)), 370);
+ctx.lineTo((27 + (i * 100)), 460);
+ctx.fill();
+
+ctx.fillStyle = "#2E8B57";
+ctx.beginPath();
+ctx.moveTo((15 + (i * 100)), 465);
+ctx.lineTo((55 + (i * 100)), 370);
+ctx.lineTo((42 + (i * 100)), 460);
+ctx.fill();
+
+ctx.fillStyle = "#2E8B57";
+ctx.beginPath();
+ctx.moveTo((50 + (i * 100)), 460);
+ctx.lineTo((5 + (i * 100)), 450);
+ctx.lineTo((2 + (i * 100)), 370);
+ctx.fill();
+
+ctx.fillStyle = "#556B2F";
+ctx.beginPath();
+ctx.moveTo((0 + (i * 100)), 470);
+ctx.lineTo((15 + (i * 100)), 420);
+ctx.lineTo((60 + (i * 100)), 470);
+ctx.fill();
+}
+
+//House BigBase
+ctx.fillStyle = "#A0522D";
+ctx.fillRect(475, 100, 500, 400);
+
+//House Roof
+ctx.fillStyle = "#8B4513";
+ctx.beginPath();
+ctx.moveTo(450, 100);
+ctx.lineTo(1000, 100);
+ctx.lineTo(725, 25);
+ctx.fill();
+
+//House Line Design
+for(i = 0; i < 12; i++){
+ctx.fillStyle = "#D2B48C";
+ctx.fillRect(472, (120 + (i * 30)), 506, 10);
+
+ctx.fillStyle = "#A0522D";
+ctx.fillRect(477, (122 + (i * 30)), 496, 6);
+}
+
+//House Door
+ctx.fillStyle = "#8B4513";
+ctx.fillRect(800, 275, 100, 200);
+
+//House Door Knob
+ctx.fillStyle = "#FFFF00";
+ctx.beginPath();
+ctx.arc(885, 385, 6, 0, 2 * Math.PI);
+ctx.fill();
+
+//House Window
+ctx.fillStyle = "#8B4513";
+ctx.fillRect(525, 285, 100, 100);
+
+ctx.fillStyle = "#4169E1";
+ctx.fillRect(535, 295, 35, 35);
+ctx.fillRect(535, 340, 35, 35);
+ctx.fillRect(580, 295, 35, 35);
+ctx.fillRect(580, 340, 35, 35);
+
+//House Base1
+ctx.fillStyle = "#708090";
+ctx.fillRect(450, 475, 550, 25);
+
+//House Base2
+ctx.fillStyle = "#C0C0C0";
+ctx.fillRect(440, 493, 569, 7);
+
+//Text on Canvas
+ctx.fillStyle = "black";
+ctx.font = "100px Arial";
+ctx.fillText("This is my cartoon", 100, 700);
+
+</script>
+</body>
+</html>
