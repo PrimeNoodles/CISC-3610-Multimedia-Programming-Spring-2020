@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="800" height="300" style="border:1px solid #d3d3d3;">
+
+<script>
+var fruit = [{name:"dummy", amount:0, color:"white"},
+{name:"Apple", amount:20, color:"red"},
+{name:"Orange", amount:10, color:"orange"},
+{name:"Banana", amount:15, color:"yellow"},
+{name:"Kiwi", amount:3, color:"green"},
+{name:"Blueberry", amount:5, color:"blue"},
+{name:"Grapes", amount:8, color:"purple"}];
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+/*
+ctx.fillStyle = "red";
+ctx.fillRect(150, 15, 100, 20);
+ctx.font="20px Arial";
+ctx.fillText("Apple", 20, 30)
+
+ctx.fillStyle = "orange";
+ctx.fillRect(150, 45, 100, 20);
+ctx.font="20px Arial";
+ctx.fillText("Orange", 20, 60)
+*/
+
+for(i = 0; i < fruit.length; i++){
+ctx.fillStyle = fruit[i].color;
+ctx.fillRect(150, (45 + (i * 30)), (25 * fruit[i].amount), 20);
+ctx.font="20px Arial";
+ctx.fillText(fruit[i].name + " " + fruit[i].amount, 20, (60 + (i * 30)))
+}
+
+</script>
+</body>
+</html>
