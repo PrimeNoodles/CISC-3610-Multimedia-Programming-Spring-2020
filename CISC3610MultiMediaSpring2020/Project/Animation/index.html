@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bot</title>
+
+<!--The <SCRIPT> tags are processed as they are encountered. -->
+<script src="bot.js"></script>
+<script src="animation.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div id="scene" style = "text-align:center;">
+<canvas id="myCanvas" width="960" height="32"></canvas>
+</div>
+
+<img id="backer" src="backer.png" alt="Backer" width="960" height="120">
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var img = document.getElementById("backer");
+ctx.drawImage(img, 10, 10);
+</script>
+
+</body>
+</html>
