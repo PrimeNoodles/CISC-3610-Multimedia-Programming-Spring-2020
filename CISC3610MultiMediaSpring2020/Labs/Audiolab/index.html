@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio id="myAudio">
+  <source src="Aalert.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<audio id="myAudio1">
+  <source src="Aoof.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<audio id="myAudio2">
+  <source src="Ahado.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<audio id="myAudio3">
+  <source src="Abeep.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<audio id="myAudio4">
+  <source src="Awrong.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Here's a boombox that plays sounds. Click on the buttons or the boombox itself.</p>
+
+<button onclick="Alert()" type="button">Alert</button>
+<button onclick="Hadouken()" type="button">Hadouken</button>
+<button onclick="Ooof()" type="button">Play Ooof</button>
+<button onclick="Censored()" type="button">Censored</button>
+<button onclick="Wrong()" type="button">Wrong</button>
+
+<img src="boombox.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area shape="rect" coords="43, 89, 113, 119" alt="Alert" onclick="Alert()" button type="button">
+    <area shape="rect" coords="133, 89, 203, 119" alt="Alert" button onclick="Hadouken()" type="button">
+    <area shape="rect" coords="223, 89, 293, 119" alt="Alert" button onclick="Ooof()" type="button">
+    <area shape="rect" coords="313, 89, 383, 119" alt="Alert" button onclick="Censored()" type="button">
+    <area shape="rect" coords="403, 89, 473, 119" alt="Alert" button onclick="Wrong()" type="button">
+</map>
+
+
+<script>
+var x = document.getElementById("myAudio"); 
+var y = document.getElementById("myAudio1"); 
+var z = document.getElementById("myAudio2"); 
+var w = document.getElementById("myAudio3"); 
+var v = document.getElementById("myAudio4"); 
+
+function Alert() { 
+  x.play(); 
+} 
+
+function Hadouken() { 
+  y.play(); 
+} 
+
+function Ooof() { 
+  z.play(); 
+} 
+
+function Censored() { 
+  w.play(); 
+} 
+
+function Wrong() { 
+  v.play(); 
+} 
+
+</script>
+
+</body>
+</html>
