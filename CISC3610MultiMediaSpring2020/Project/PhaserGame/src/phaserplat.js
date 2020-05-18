@@ -14,10 +14,10 @@ let player
 
 function preload () {
 
-  game.load.image('sky', './assets/sky.png')
-  game.load.image('ground', './assets/platform.png')
-  game.load.image('coin', './assets/coin.png')
-  game.load.spritesheet('duster', './assets/cloaker.png', 32, 32)
+  game.load.image('sky', 'https://raw.githubusercontent.com/PrimeNoodles/CISC-3610-Multimedia-Programming-Spring-2020/master/CISC3610MultiMediaSpring2020/assets/images/sky.png')
+  game.load.image('ground', 'https://raw.githubusercontent.com/PrimeNoodles/CISC-3610-Multimedia-Programming-Spring-2020/master/CISC3610MultiMediaSpring2020/assets/images/platform.png')
+  game.load.image('coin', 'https://raw.githubusercontent.com/PrimeNoodles/CISC-3610-Multimedia-Programming-Spring-2020/master/CISC3610MultiMediaSpring2020/assets/sprites/coin.png')
+  game.load.spritesheet('duster', 'https://raw.githubusercontent.com/PrimeNoodles/CISC-3610-Multimedia-Programming-Spring-2020/master/CISC3610MultiMediaSpring2020/assets/spritesheet/cloaker.png', 26, 27)
 }
 
 function create () {
