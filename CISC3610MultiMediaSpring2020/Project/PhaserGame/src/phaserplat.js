@@ -8,7 +8,7 @@ const game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
 let score = 0
 let scoreText
 let platforms
-let diamonds
+let coins
 let cursors
 let player
 
@@ -38,7 +38,7 @@ function create () {
   ledge.body.immovable = true
 
 
-  player = game.add.sprite(32, game.world.height - 150, 'duster')
+  player = game.add.sprite(27, game.world.height - 150, 'duster')
   game.physics.arcade.enable(player)
 
   player.body.bounce.y = 0.2
